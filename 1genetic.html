@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de algoritmo genético</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1> Genetic Algorithm - DEMO 🌱</h1>
+    <p>
+    <form id="ga-config">
+        <span>Target text: <input class="ga-input" type="text" id="target" placeholder="target text" value="davidkben"></span>
+        <span>Initial population: <input class="ga-input" type="number" id="initial_population" placeholder="initial population" min="100" value="200"></span>
+        <span>Mutation rate: <input class="ga-input" type="number" id="mutation_rate" placeholder="mutation rate" value="10"></span>
+    </form>
+    </p>
+    <button id="start" type="submit" onclick="start()">START</button>
+    <p>
+        <h1 class="not_find" id="best_text"></h1>
+        <span id="best_fitness"></span>
+        <h3 id="generation"></h3>
+    </p>
+
+    <script src="1genetic.js"></script>
+</body>
+</html>
+
+<style>
+    *{
+        font-family: 'Poppins';
+        color: #6f5d4c;
+    }
+    body{
+        padding: 40px;
+        background-color: #cfdbd1;
+    }
+    form#ga-config{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    input.ga-input{
+        padding: 5px 10px 5px 10px;
+        border: 1px;
+        background-color: #6b8c5328;
+    }
+
+    button#start{
+        background-color: #afcb7f;
+        color: #6b8c53;
+        font-weight: 700;
+        font-size: large;
+        border: 0px;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 50px 10px 50px;
+        transition: .2s;
+    }
+    button#start:hover{
+        background-color: #6b8c53;
+        color: aliceblue;
+        padding: 10px 60px 10px 60px;
+    }
+    h1.not_find{
+        color: #8c53538c;   
+    }
+    h1.find{
+        color: #6b8c53;   
+    }
+</style>
