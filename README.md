@@ -1,5 +1,5 @@
 # Genetic Algorithm Text Guess Demo JS
-Genetic Algorithm to guess a text provided by the user 🌱🖥
+Algoritmo genético para adivinhar um texto dado pelo usuário 🌱🖥
 
 A seguinte demo utiliza dos fundamentos do algorithm genético para fazer com que o computador descubra um texto escrito pelo usuário.<p>
 Esse tipo de algoritmo se baseia nas ideias evolucionistas de Darwin para simular a evolução natural de uma espécie (no caso de PC, dados) e tem como objetivo buscar possíveis soluções para problemas complexos.<p>
